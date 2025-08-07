@@ -1,8 +1,9 @@
 // src/components/ProjectCard.tsx
 import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
+import type { Project } from '../types/project';
 
-export const ProjectCard = ({ project }) => {
+export const ProjectCard = (project: Project) => {
   return (
     <Tilt
       tiltMaxAngleX={10}
