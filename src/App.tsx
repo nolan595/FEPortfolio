@@ -1,6 +1,7 @@
 import { projects } from './projects';
 import { ProjectCard } from './components/ProjectCard';
 import { Hero } from './components/Hero';
+import type { Project } from './types/projectType';
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
           All Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          {projects.map((project) => (
+          {projects.map((project: Project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

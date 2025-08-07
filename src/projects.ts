@@ -1,5 +1,7 @@
+import type { Project } from "./types/projectType";
+
 // src/projects.ts
-export const projects = [
+export const projects: Project[] = [
   {
     id: 'task-manager',
     title: 'Task Manager',
